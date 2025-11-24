@@ -8,7 +8,7 @@
 
 <?php if ($reservas): ?>
     <table class="table table-striped table-hover">
-        <thead class="table-dark">
+        <thead>
             <tr>
                 <th>ID</th>
                 <th>Cliente</th>

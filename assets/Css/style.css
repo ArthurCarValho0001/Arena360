@@ -1,0 +1,197 @@
+:root {
+    --color-primary: #00FF33;
+    --color-background: #0A0A0A;
+    --color-component-bg: #222222; 
+    --color-text: #F0F0F0;
+    --color-secondary-text: #909090;
+    --color-danger: #D90000; 
+    --color-warning: #FFC107; 
+    --shadow-neon: 0 0 8px var(--color-primary);
+}
+
+/* ---------------------------------- */
+/* 1. ESTILOS GLOBAIS E FUNDO */
+/* ---------------------------------- */
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Arial', sans-serif; 
+}
+
+h1, h2, h3, h4 {
+    color: var(--color-text);
+    border-bottom: 2px solid rgba(0, 255, 51, 0.1); 
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------- */
+/* 2. NAVBAR E DROPDOWNS */
+/* ---------------------------------- */
+
+.navbar {
+    border-bottom: 1px solid var(--color-primary);
+    box-shadow: 0 4px 10px rgba(0, 255, 51, 0.2);
+}
+
+.navbar-brand {
+    color: var(--color-primary) !important;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 255, 51, 0.5); 
+}
+
+.nav-link {
+    color: var(--color-text) !important;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-link:hover, .dropdown-item:hover {
+    color: var(--color-primary) !important;
+    text-shadow: 0 0 5px rgba(0, 255, 51, 0.7);
+    background-color: #252525 !important;
+}
+
+.dropdown-menu {
+    background-color: var(--color-component-bg) !important;
+    border: 1px solid var(--color-primary);
+    box-shadow: var(--shadow-neon);
+}
+
+.dropdown-item {
+    color: var(--color-text) !important;
+    background-color: var(--color-component-bg) !important;
+}
+
+/* ---------------------------------- */
+/* 3. COMPONENTES: CARDS E ALERTAS */
+/* ---------------------------------- */
+
+.card {
+    background-color: var(--color-component-bg);
+    border: 1px solid rgba(0, 255, 51, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 255, 51, 0.1);
+}
+
+/* ---------------------------------- */
+/* 4. TABELAS (LISTAR) - CORREÇÃO DE CONTRASTE E TEXTO */
+/* ---------------------------------- */
+
+.table {
+    /* Fundo base da tabela CLARO para contrastar com o #0A0A0A */
+    --bs-table-bg: #3A3A3A; 
+    --bs-table-color: var(--color-text);
+    --bs-table-border-color: #555; 
+}
+
+.table thead {
+    /* Fundo preto absoluto para o cabeçalho brilhar */
+    background-color: #000000; 
+    border-bottom: 2px solid var(--color-primary); 
+    color: var(--color-primary); /* Cor do texto do cabeçalho em Verde Neon */
+}
+
+/* CORREÇÃO DO TEXTO: Força o texto de TODAS as células de dados a ser BRANCO SUAVE */
+.table-striped > tbody > tr > td {
+    color: var(--color-text) !important; 
+}
+
+/* Linhas zebradas (ODD/ÍMPAR) - O MAIS CLARO */
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #4A4A4A; /* Linha mais clara (Fundo ímpar) */
+}
+
+/* Linhas pares (EVEN) - A cor base da tabela, mais escura que a ímpar */
+.table-striped > tbody > tr:nth-of-type(even) > * {
+    background-color: #3A3A3A; /* Volta para #3A3A3A (Fundo par) */
+}
+
+
+/* Efeito de hover nas linhas - VISIVELMENTE CLARO com BRILHO NEON */
+.table-hover > tbody > tr:hover > * {
+    background-color: #555555 !important; 
+    box-shadow: inset 0 0 5px rgba(0, 255, 51, 0.5); 
+    color: #FFF !important; 
+}
+
+/* ---------------------------------- */
+/* 5. BOTÕES E FORMULÁRIOS */
+/* ---------------------------------- */
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-background) !important;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #00CC33;
+    border-color: #00CC33;
+    box-shadow: var(--shadow-neon);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: var(--color-component-bg);
+    border-color: var(--color-secondary-text);
+    color: var(--color-text);
+}
+
+.btn-secondary:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    box-shadow: 0 0 3px rgba(0, 255, 51, 0.5);
+}
+
+/* Estilo para a barra de pesquisa */
+.btn-outline-success {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
+
+/* ESTILOS ESPECÍFICOS PARA OS BOTÕES DE AÇÃO (EDITAR/EXCLUIR) */
+
+/* Botão EDITAR (Amarelo/Warning) */
+.btn-warning {
+    background-color: #CC9900 !important;
+    border: 1px solid var(--color-warning) !important;
+    color: #222222 !important;
+    font-weight: 600;
+    transition: all 0.2s;
+    border-radius: 4px;
+    padding: .25rem .5rem; 
+    font-size: .875rem;
+}
+
+.btn-warning:hover {
+    background-color: var(--color-warning) !important; 
+    box-shadow: 0 0 6px var(--color-warning); 
+    transform: scale(1.05);
+}
+
+/* Botão EXCLUIR (Vermelho/Danger) */
+.btn-danger {
+    background-color: #D90000 !important; 
+    border: 1px solid #FF3333 !important;
+    color: var(--color-text) !important;
+    font-weight: 600;
+    transition: all 0.2s;
+    border-radius: 4px;
+    padding: .25rem .5rem; 
+    font-size: .875rem;
+}
+
+.btn-danger:hover {
+    background-color: #FF3333 !important; 
+    box-shadow: 0 0 6px #FF3333; 
+    transform: scale(1.05);
+}

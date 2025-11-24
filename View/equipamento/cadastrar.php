@@ -3,15 +3,21 @@
 <form action="?page=equipamento/processar&action=cadastrar" method="POST">
     
     <div class="mb-3">
-        <label for="nome_equipamento" class="form-label">Nome do Equipamento (Ex: PC #01)</label>
+        <label for="nome_equipamento" class="form-label">Nome do Equipamento</label>
         <input type="text" class="form-control" id="nome_equipamento" name="nome_equipamento" required>
     </div>
     
     <div class="mb-3">
-        <label for="tipo_equipamento" class="form-label">Tipo (Ex: PC Gamer, Console)</label>
-        <input type="text" class="form-control" id="tipo_equipamento" name="tipo_equipamento" required>
+        <label for="tipo" class="form-label">Tipo de Equipamento</label>
+            <select name="tipo" id="tipo" class="form-select" required>
+                <option value="" disabled selected>Selecione o Tipo</option>
+                <option value="PC">PC Gamer</option>
+                <option value="Console">Console</option>
+                <option value="VR">Óculos VR</option>
+                <option value="Acessório">Volante Gamer</option>
+            </select>
     </div>
-    
+
     <div class="mb-3">
         <label for="valor_hora" class="form-label">Valor por Hora (R$)</label>
         <input type="number" step="0.01" class="form-control" id="valor_hora" name="valor_hora" required>

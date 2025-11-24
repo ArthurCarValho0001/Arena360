@@ -31,7 +31,16 @@
     
     <div class="mb-3">
         <label for="tipo_equipamento" class="form-label">Tipo</label>
-        <input type="text" class="form-control" id="tipo_equipamento" name="tipo_equipamento" value="<?php echo $equipamento->tipo_equipamento; ?>" required>
+        <div class="mb-3">
+            <label for="tipo" class="form-label">Tipo de Equipamento</label>
+                <select name="tipo" id="tipo" class="form-select" required>
+                    <option value="" disabled selected>Selecione o Tipo</option>
+                    <option value="PC">PC Gamer</option>
+                    <option value="Console">Console</option>
+                    <option value="VR">Óculos VR</option>
+                    <option value="Acessório">Volante Gamer</option>
+                </select>
+    </div>
     </div>
     
     <div class="mb-3">

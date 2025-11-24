@@ -8,7 +8,7 @@
 
 <?php if ($clientes): ?>
     <table class="table table-striped table-hover">
-        <thead class="table-dark">
+        <thead>
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
