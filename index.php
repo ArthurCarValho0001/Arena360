@@ -106,8 +106,8 @@
                     break;
                     
                 default:
-                    print "<h1>Sistema de Gerenciamento Arena360</h1>";
-                    print "<p class='lead'>Use o menu acima para gerenciar clientes, equipamentos e reservas.</p>";
+                    print "<h1>Arena360</h1>";
+                     print '<img src="assets/Img/arena360-logo.png">';
                     break;
             }
         ?>

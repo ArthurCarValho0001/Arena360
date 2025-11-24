@@ -9,10 +9,6 @@
     --shadow-neon: 0 0 8px var(--color-primary);
 }
 
-/* ---------------------------------- */
-/* 1. ESTILOS GLOBAIS E FUNDO */
-/* ---------------------------------- */
-
 body {
     background-color: var(--color-background);
     color: var(--color-text);
@@ -25,10 +21,6 @@ h1, h2, h3, h4 {
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
-
-/* ---------------------------------- */
-/* 2. NAVBAR E DROPDOWNS */
-/* ---------------------------------- */
 
 .navbar {
     border-bottom: 1px solid var(--color-primary);
@@ -63,10 +55,6 @@ h1, h2, h3, h4 {
     background-color: var(--color-component-bg) !important;
 }
 
-/* ---------------------------------- */
-/* 3. COMPONENTES: CARDS E ALERTAS */
-/* ---------------------------------- */
-
 .card {
     background-color: var(--color-component-bg);
     border: 1px solid rgba(0, 255, 51, 0.3);
@@ -74,50 +62,36 @@ h1, h2, h3, h4 {
     box-shadow: 0 0 5px rgba(0, 255, 51, 0.1);
 }
 
-/* ---------------------------------- */
-/* 4. TABELAS (LISTAR) - CORREÇÃO DE CONTRASTE E TEXTO */
-/* ---------------------------------- */
-
 .table {
-    /* Fundo base da tabela CLARO para contrastar com o #0A0A0A */
     --bs-table-bg: #3A3A3A; 
     --bs-table-color: var(--color-text);
     --bs-table-border-color: #555; 
 }
 
 .table thead {
-    /* Fundo preto absoluto para o cabeçalho brilhar */
     background-color: #000000; 
     border-bottom: 2px solid var(--color-primary); 
-    color: var(--color-primary); /* Cor do texto do cabeçalho em Verde Neon */
+    color: var(--color-primary); 
 }
 
-/* CORREÇÃO DO TEXTO: Força o texto de TODAS as células de dados a ser BRANCO SUAVE */
 .table-striped > tbody > tr > td {
     color: var(--color-text) !important; 
 }
 
-/* Linhas zebradas (ODD/ÍMPAR) - O MAIS CLARO */
 .table-striped > tbody > tr:nth-of-type(odd) > * {
-    background-color: #4A4A4A; /* Linha mais clara (Fundo ímpar) */
+    background-color: #4A4A4A; 
 }
 
-/* Linhas pares (EVEN) - A cor base da tabela, mais escura que a ímpar */
 .table-striped > tbody > tr:nth-of-type(even) > * {
-    background-color: #3A3A3A; /* Volta para #3A3A3A (Fundo par) */
+    background-color: #3A3A3A; 
 }
 
-
-/* Efeito de hover nas linhas - VISIVELMENTE CLARO com BRILHO NEON */
 .table-hover > tbody > tr:hover > * {
     background-color: #555555 !important; 
     box-shadow: inset 0 0 5px rgba(0, 255, 51, 0.5); 
     color: #FFF !important; 
 }
 
-/* ---------------------------------- */
-/* 5. BOTÕES E FORMULÁRIOS */
-/* ---------------------------------- */
 
 .btn-primary {
     background-color: var(--color-primary);
@@ -146,7 +120,6 @@ h1, h2, h3, h4 {
     box-shadow: 0 0 3px rgba(0, 255, 51, 0.5);
 }
 
-/* Estilo para a barra de pesquisa */
 .btn-outline-success {
     color: var(--color-primary);
     border-color: var(--color-primary);
@@ -158,9 +131,6 @@ h1, h2, h3, h4 {
     color: var(--color-background);
 }
 
-/* ESTILOS ESPECÍFICOS PARA OS BOTÕES DE AÇÃO (EDITAR/EXCLUIR) */
-
-/* Botão EDITAR (Amarelo/Warning) */
 .btn-warning {
     background-color: #CC9900 !important;
     border: 1px solid var(--color-warning) !important;
@@ -178,7 +148,6 @@ h1, h2, h3, h4 {
     transform: scale(1.05);
 }
 
-/* Botão EXCLUIR (Vermelho/Danger) */
 .btn-danger {
     background-color: #D90000 !important; 
     border: 1px solid #FF3333 !important;
