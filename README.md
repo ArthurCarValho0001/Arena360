@@ -25,7 +25,37 @@ O sistema emprega uma arquitetura **MVC Simples**, separando as responsabilidade
 
 O sistema segue a arquitetura **MVC Simples**, com a seguinte organização:
 
-Arena360/ │ ├── assets/ # Arquivos estáticos (imagens, etc.) ├── css/ # Folhas de estilo ├── js/ # Scripts JavaScript │ ├── Controller/ # Responsável por gerenciar o fluxo da aplicação. │ ├── ClienteController.php │ ├── QuadraController.php │ ├── VendaController.php │ └── ReservaController.php │ ├── Model/ # Lógica de negócio e acesso ao banco (CRUDs, entidades e conexão). │ ├── Cliente.php │ ├── Quadra.php │ ├── Venda.php │ ├── Reserva.php │ └── Conexao.php │ ├── View/ # Interface do usuário (HTML com PHP embarcado). │ ├── cliente/ # Telas de cadastro/listagem de clientes │ ├── quadra/ # Telas de cadastro/listagem de quadras │ ├── venda/ # Telas de vendas │ └── reserva/ # Telas de reservas/agenda │ ├── banco.sql # Script para criação do banco de dados e tabelas └── index.php # Ponto de entrada central da aplicação
+### 📂 Estrutura de Diretórios
+
+O sistema segue a arquitetura **MVC Simples**, com a seguinte organização:
+
+    Arena360/
+    │
+    ├── assets/           # Arquivos estáticos (imagens, etc.)
+    ├── css/              # Folhas de estilo
+    ├── js/               # Scripts JavaScript
+    │
+    ├── Controller/       # Responsável por gerenciar o fluxo da aplicação.
+    │   ├── ClienteController.php
+    │   ├── QuadraController.php
+    │   ├── VendaController.php
+    │   └── ReservaController.php
+    │
+    ├── Model/            # Lógica de negócio e acesso ao banco (CRUDs, entidades e conexão).
+    │   ├── Cliente.php
+    │   ├── Quadra.php
+    │   ├── Venda.php
+    │   ├── Reserva.php
+    │   └── Conexao.php
+    │
+    ├── View/             # Interface do usuário (HTML com PHP embarcado).
+    │   ├── cliente/      # Telas de cadastro/listagem de clientes
+    │   ├── quadra/       # Telas de cadastro/listagem de quadras
+    │   ├── venda/        # Telas de vendas
+    │   └── reserva/      # Telas de reservas/agenda
+    │
+    ├── banco.sql         # Script para criação do banco de dados e tabelas
+    └── index.php         # Ponto de entrada central da aplicação
 ---
 
 ## ✨ Funcionalidades do Sistema
